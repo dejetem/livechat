@@ -29,7 +29,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['livechat-production-9c6c.up.railway.app/']
+ALLOWED_HOSTS = ['livechat-production-9c6c.up.railway.app']
 
 
 # Application definition
