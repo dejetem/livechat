@@ -1,0 +1,201 @@
+
+:root {
+    --shaddow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+}
+/* * {
+    margin: 0;
+} */
+body{
+    background-color: rgb(231, 234, 251);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* -----------  home Page ------------- */
+#main{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+.home-logo{
+    height: 120px;
+    width: 120px;
+    cursor: pointer;
+    padding-top: 4rem;
+    padding-left: 4rem;
+}
+#center-div{
+    width: fit-content;
+    padding-top: 8rem;
+    padding-left: 18rem;
+}
+
+#header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#center-div input[type='submit']{
+    width: 100%;
+    background-color: rgb(75, 93, 172);
+    border:none;
+    color: #fff;
+    border:2px solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:450px) {
+    #center-div{
+        padding-left: 5rem;
+    }
+    
+}
+
+
+/* -----------  Lobby Page ------------- */
+#logo{
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+#lobby-form-container{
+    width: 400px;
+    box-shadow:var(--shaddow);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+#lobby-welcome-message{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#lobby-welcome-message h1{
+    font-size: 36px;
+}
+
+.lobby-form-field{
+    margin-bottom: 20px;
+}
+
+.lobby-form-field label{
+    font-size: 16px;
+    line-height: 1.7em;
+}
+
+.lobby-form-field input{
+    width: 100%;
+    border:2px solid rgba(198,202,219,1);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.lobby-form-field input[type='submit']{
+    background-color: rgb(75, 93, 172);
+    border:none;
+    color: #fff;
+}
+
+
+@media screen and (max-width:450px) {
+    #lobby-form-container{
+        width: 95%;
+
+    }
+
+    #lobby-welcome-message h1{
+        font-size: 24px;
+    }
+    
+}
+
+/* --------- Room Styling -----------*/
+#room-name-wrapper{
+    text-align: center;
+    font-size: 18px;
+}
+
+#room-video-streams{
+    display: flex;
+    flex-wrap: wrap;
+    height: 85vh;
+    width: 95%;
+    margin:0 auto;
+}
+
+.room-video-container{
+    flex-basis: 500px;
+    flex-grow: 1;
+    max-height: 100%;
+    min-height: 350px;
+    border: 1px solid rgb(75, 93, 172);
+    border-radius: 5px;
+    margin: 2px;
+    background-color: rgba(198,202,219,1);
+    position: relative;
+}
+
+.video-player{
+    height: 100%;
+    width: 100%;
+}
+
+.video-player > * {
+    border-radius: 5px;
+}
+
+.username-wrapper{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+    background-color: rgba(0,0,0,0.3);
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+
+@media screen and (max-width:1650px) {
+    .room-video-container{
+        flex-basis: 300px;
+        min-height: 200px;
+    }
+}
+
+#room-controls-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    column-gap: 1em;
+    position: fixed;
+    bottom: 20px;
+}
+
+.control-icon{
+    height: 20px;
+    width: 20px;
+    box-shadow: var(--shaddow);
+    background-color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+
+
+
