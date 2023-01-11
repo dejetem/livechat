@@ -53,21 +53,22 @@ Open your a tab on your browser and input this url
 
 ## Usage
 
+Home page
 <img
   src="./static/images/start.png"
   alt="Home page"
   title="Home page"
   style="display: inline-block; margin: 0 auto; max-width: 300px"
 />
-<p align="center">
-  <img src="./static/images/start.png" width="200" alt="Home page" title="Home page"/>
-</p>
+
+Start or Join Live page
 <img
   src="./static/images/join.png"
   alt="Start or Join"
   title="Start or Join Live page"
   style="display: inline-block; margin: 0 auto; max-width: 300px"
 />
+
 ## Contributing
 As I use this for my own projects, I know this might not be the perfect approach for all the projects out there. If you have any ideas, just [open an issue](https://github.com/dejetem/livechat/issues/new) and tell me what you think.
 If you'd like to contribute, please fork the repository and make changes as you'd like. Pull requests are warmly welcome.
