@@ -21,6 +21,7 @@ def lobby(request):
 def room(request):
     return render(request, 'room.html')
 
+#generate a token for going live
 def getToken(request):
     appId = os.getenv('APP_ID')
     appCertificate = os.getenv('APP_CERTIFICATE')
@@ -36,6 +37,7 @@ def getToken(request):
     return JsonResponse({'token': token, 'uid': uid}, safe=False)
 
 
+#create a room for going live or join an existing live
 @csrf_exempt
 def createUser(request):
     data = json.loads(request.body)
@@ -47,7 +49,7 @@ def createUser(request):
 
     return JsonResponse({'name':data['name']}, safe=False)
 
-
+# for get user room
 def getUser(request):
     uid = request.GET.get('UID')
     room_name = request.GET.get('room_name')
@@ -60,7 +62,7 @@ def getUser(request):
     return JsonResponse({'name':member.name}, safe=False)
 
 
-
+#this for delete a user once a live end
 @csrf_exempt
 def deleteUser(request):
     data = json.loads(request.body)

@@ -1,5 +1,5 @@
 let form = document.getElementById('lobby-form')
-
+    // generate token to go live
     let handleSubmit = async (e) => {
         e.preventDefault()
         let room = e.target.room.value.toUpperCase()

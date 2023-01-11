@@ -3,6 +3,7 @@ from datetime import datetime
 
 # Create your models here.
 
+# room model
 class RoomUsers(models.Model):
     name = models.CharField(max_length=1000)
     uid = models.CharField(max_length=1000)

@@ -101,6 +101,7 @@ let toggleMic = async (e) => {
     }
 }
 
+// creating a room for live streaming
 let createMember = async () => {
     let response = await fetch('/create_member/', {
         method:'POST',
@@ -120,6 +121,7 @@ let getMember = async (user) => {
     return member
 }
 
+// ending a live
 let deleteMember = async () => {
     let response = await fetch('/delete_member/', {
         method:'POST',
